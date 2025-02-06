@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+header {
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header img {
+    border-radius: 50%;
+    margin: 10px 0;
+    width: 150px;
+    height: 150px;
+}
+
+h1 {
+    margin: 0;
+}
+
+div {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+h2 {
+    color: darkslategray;
+    border-bottom: 2px solid darkslategray;
+    padding-bottom: 5px;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin: 10px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.header h2 {
+    font-size: 24px;
+    color: darkgray;
+}
+
+.profile {
+    background-color: gainsboro;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profile p {
+    font-size: 16px;
+}
+
+div h2 {
+    font-size: 24px;
+    border-bottom: 2px solid darkslategray;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+div ul {
+    list-style: none;
+    padding: 0;
+}
+
+div ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    padding: 20px;
+    border-top: 2px solid darkslategray;
+    border-bottom: 2px solid darkslategray;
+}
