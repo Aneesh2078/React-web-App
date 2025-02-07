@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
-import Header from "./Header";
+import Header from "./Header"; 
 
-function Account() {
+function Account() {//add the database to the account page
     const [students, setStudents] = useState([]);
     const [showForm, setShowForm] = useState(false);
     const [isEditing, setIsEditing] = useState(false);
