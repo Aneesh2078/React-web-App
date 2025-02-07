@@ -27,7 +27,7 @@ function Account() {
     }, []);
 
     const fetchStudents = () => {
-        axios.get("http://localhost:9080/api/students")
+        axios.get("http://91.203.132.60:9080/api/students")
             .then((response) => setStudents(response.data))
             .catch((error) => console.error("Error fetching students data: ", error));
     };
@@ -55,7 +55,7 @@ function Account() {
             setErrors(validationErrors);
         } else {
             if (isEditing) {
-                axios.put(`http://localhost:9080/api/students/${editStudent.id}`, newStudent)
+                axios.put(`http://91.203.132.60:9080/api/students/${editStudent.id}`, newStudent)
                     .then(() => {
                         fetchStudents();
                         resetFormState();
@@ -64,7 +64,7 @@ function Account() {
                         console.error("Error editing student: ", error);
                     });
             } else {
-                axios.post("http://localhost:9080/api/students", newStudent)
+                axios.post("http://91.203.132.60:9080/api/students", newStudent)
                     .then(() => {
                         fetchStudents();
                         resetFormState();
@@ -77,7 +77,7 @@ function Account() {
     };
 
     const handleFetchById = () => {
-        axios.get(`http://localhost:9080/api/students/${studentId}`)
+        axios.get(`http://91.203.132.60:9080/api/students/${studentId}`)
             .then((response) => {
                 setFetchedStudent(response.data);
             })
@@ -95,7 +95,7 @@ function Account() {
     };
 
     const handleDelete = (id) => {
-        axios.delete(`http://localhost:9080/api/students/${id}`)
+        axios.delete(`http://91.203.132.60:9080/api/students/${id}`)
             .then(() => fetchStudents())
             .catch((error) => {
                 console.error("Error deleting student: ", error);
